@@ -4,12 +4,12 @@ An AI-powered web font analyzer that uses Playwright (Chromium) to extract typog
 
 ## Features
 
-- 🔍 **Automatic Font Extraction**: Uses Playwright (Chromium) to analyze web pages and extract all font usage
-- 🤖 **AI-Powered Analysis**: Leverages OpenAI to provide typography analysis and recommendations
-- 🎨 **Font Pairing Suggestions**: Get intelligent suggestions for complementary font combinations
-- 📊 **Detailed Reports**: View font sizes, weights, usage counts, and element types
-- 🔗 **External Font Detection**: Identifies Google Fonts and other external font sources
-- 🐍 **Python Implementation**: Built with Python and Playwright
+- **Automatic Font Extraction**: Uses Playwright (Chromium) to analyze web pages and extract all font usage
+- **AI-Powered Analysis**: Leverages OpenAI to provide typography analysis and recommendations
+- **Font Pairing Suggestions**: Get intelligent suggestions for complementary font combinations
+- **Detailed Reports**: View font sizes, weights, usage counts, and element types
+- **External Font Detection**: Identifies Google Fonts and other external font sources
+- **Python Implementation**: Built with Python and Playwright
 
 ## Installation
 
