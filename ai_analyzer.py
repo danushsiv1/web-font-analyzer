@@ -1,4 +1,5 @@
 from openai import OpenAI
+from openai import APIError, AuthenticationError, RateLimitError
 from typing import Dict, Any, Optional
 import json
 
@@ -138,6 +139,12 @@ Provide your analysis in a structured JSON format with the following structure:
             result['issues'] = []
         
         return result
+    except AuthenticationError as e:
+        raise Exception(f'OpenAI API authentication failed. Please check your API key: {str(e)}')
+    except RateLimitError as e:
+        raise Exception(f'OpenAI API rate limit exceeded. Please try again later: {str(e)}')
+    except APIError as e:
+        raise Exception(f'OpenAI API error: {str(e)}')
     except Exception as e:
         if 'AI Analysis failed' in str(e):
             raise
